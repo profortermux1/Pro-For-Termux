@@ -245,7 +245,7 @@ if choose == '1' :
 
     print('\n')
 
-    os.system('pkg install curl','banner3-D')
+    os.system('pkg install curl')
 
     print('\n')
 
@@ -269,7 +269,7 @@ if choose == '1' :
 
     print('\n')
 
-    render('future''banner3-D')
+    render('future','banner3-D')
 
     print('\n')
 
@@ -301,31 +301,27 @@ if choose == '1' :
 
     print('\n')
 
-    render('Thanck You'+user,'banner3-D')
+    render('Thanck You'+user,'bubble')
     
     print('\n')
     
     time.sleep(0.6)
 
-    print("Thanck you"+user)
+    print("Thanck you" +user)
    
     time.sleep(0.6)   
     
-    print('Thanck you For Usinf Tool By!!'+user)
+    print('Thanck you For Usinf Tool By!!' +user)
 
     time.sleep(0.6)
 
     S = Style('   Created By Pro For Termux   ').Square(Equal=True)
  
     time.sleep(0.6)
-  
-    print(ByeBye)
-    
-    time.sleep(0.6)
 
     os.system("exit")
 ####################################################################
 elif choose == '0' :
-   S = Style(' Created By Pro For Termux ').Square(Equal=True)
+   S = Style('    Created By Pro For Termux   ').Square(Equal=True)
    os.system("exit")
 ###################################################################
