@@ -189,8 +189,6 @@ if choose == '1' :
     
     os.system('dpkg --configure -a')
     
-    print('\n')
-
     os.system('apt update')
 
     print('\n')
