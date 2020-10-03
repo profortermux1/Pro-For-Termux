@@ -8,3 +8,8 @@ Methode The usage :
 
 
 
+git clone https://github.com/profortermux1/FixTermux
+
+ls
+
+
