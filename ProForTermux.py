@@ -187,7 +187,7 @@ if choose == '1' :
     
     render('Update','banner3-D')
     
-    os.system('dpkg --configure -a'
+    os.system('dpkg --configure -a')
     
     print('\n')
 
