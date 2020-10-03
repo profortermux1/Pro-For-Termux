@@ -181,11 +181,13 @@ if choose == '1' :
     jalan("   Wait To install some package ............................")
     print("\n")
     print("\n")
-    jalan('\033[1;37m**************************Staring**********************************')
+    jalan('\033[1;37m***************************Staring**********************************')
 
     print('\n')
     
     render('Update','banner3-D')
+    
+    os.system('dpkg --configure -a'
     
     print('\n')
 
