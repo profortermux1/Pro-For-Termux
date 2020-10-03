@@ -2,6 +2,10 @@ import os,sys,time
 
 os.system("clear")
 
+os.system('git pull')
+
+os.system("clear")
+
 # Banner "Slow Index Logo Pro For Termux"
 
 from V7xStyle import Style
@@ -298,17 +302,30 @@ if choose == '1' :
     print('\n')
 
     render('Thanck You'+user,'banner3-D')
+    
+    print('\n')
+    
+    time.sleep(0.6)
 
     print("Thanck you"+user)
    
+    time.sleep(0.6)   
+    
     print('Thanck you For Usinf Tool By!!'+user)
 
-    S = Style('Created By Pro For Termux ').Square(Equal=True)
+    time.sleep(0.6)
+
+    S = Style('   Created By Pro For Termux   ').Square(Equal=True)
+ 
+    time.sleep(0.6)
+  
+    print(ByeBye)
+    
+    time.sleep(0.6)
 
     os.system("exit")
-
-###################################################################
+####################################################################
 elif choose == '0' :
-    S = Style('Created By Pro For Termux ').Square(Equal=True)
-    os.system("exit")
+   S = Style(' Created By Pro For Termux ').Square(Equal=True)
+   os.system("exit")
 ###################################################################
