@@ -122,24 +122,24 @@ while True :
        print("\n")
 ####################################################################
 We='''
-                            \033[1;36m▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄
-                            █▒▒░░░░░░░░░▒▒█
-                             █░░█░░░░░█░░█
-                          █    ░░░▀█▀░░░█ ▄▄
+                          \033[1;36m▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄
+                          █▒▒░░░░░░░░░▒▒█
+                           █░░█░░░░░█░░█
+                        █    ░░░▀█▀░░░█ ▄▄
                         █░░█▀▄░░░░░░░▄▀─█░░█
-                       █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-                     █----╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗----█
-                     █----║║║╠─║─║─║║║║║╠─----█
-                     █----╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝----█
-                       █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+                   █----╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗----█
+                   █----║║║╠─║─║─║║║║║╠─----█
+                   █----╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝----█
+                     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
 
-                          \033[1;34m╔════╗╔═══╗
-                          \033[1;32m║╔╗╔╗║║╔═╗║
-                         \033[1;31m ╚╝║║╚╝║║ ║║
-                            \033[1;35m║║  ║║ ║║
-                            \033[1;30m║║  ║╚═╝║
-                            \033[1;33m╚╝  ╚═══╝
+                    \033[1;34m╔════╗╔═══╗
+                    \033[1;32m║╔╗╔╗║║╔═╗║
+                    \033[1;31m║║║║ ║║  ║║
+                    \033[1;35m  ║║  ║║ ║║
+                    \033[1;30m  ║║  ║╚═╝║
+                    \033[1;33m  ╚╝  ╚═══╝
 
       \033[1;34m╔═══╗╔══╗╔═╗╔═╗    ╔════╗╔═══╗╔═══╗╔═╗╔═╗╔╗ ╔╗╔═╗╔═╗
       \033[1;32m║╔══╝╚╣─╝╚╗╚╝╔╝    ║╔╗╔╗║║╔══╝║╔═╗║║║╚╝║║║║ ║║╚╗╚╝╔╝
@@ -172,16 +172,16 @@ print('\n')
 time.sleep(0.3)
 
 
-choose = input("==>\033[1;37mchoose an option : ")
+choose = input("==> \033[1;37mchoose an option : ")
 if choose == '1' :
     print('\n')
     time.sleep(0.3)
     An.DL(text='B#Proccessing',t=0.1,width=50)
     os.system("clear")
-    jalan("   Wait To install some package ............................")
+    jalan("   Wait To install some package .....................................")
     print("\n")
     print("\n")
-    jalan('\033[1;37m***************************Staring**********************************')
+    jalan('\033[1;37m******************************Staring**********************************')
 
     print('\n')
     
@@ -306,22 +306,45 @@ if choose == '1' :
     print('\n')
     
     time.sleep(0.6)
-
-    print("Thanck you" +user)
    
     time.sleep(0.6)   
     
-    print('Thanck you For Usinf Tool By!!' +user)
+    print('\033[1;33mThanck you For Usinfg Tool By!!')
 
     time.sleep(0.6)
 
-    S = Style('   Created By Pro For Termux   ').Square(Equal=True)
- 
-    time.sleep(0.6)
+    print('\n')
+    S = Style('   Created By Pro For Termux    ').Square(Equal=True)
+    
+    print('\n')
+
+    print(S)
+
+    time.sleep(0.7)
+
+    print('\n')
 
     os.system("exit")
 ####################################################################
 elif choose == '0' :
-   S = Style('    Created By Pro For Termux   ').Square(Equal=True)
+   S = Style('      Created By Pro For Termux     ').Square(Equal=True)
+   print('\n')
+   print(S)
+   print('\n')
+   print("\033[1;33m┻┳|―-∩")
+   time.sleep(0.7)
+   print("┳┻|　　ヽ")
+   time.sleep(0.7)
+   print("┻┳|　●   |")
+   time.sleep(0.7)
+   print("┳┻|▼) _ノ")
+   time.sleep(0.7)
+   print("┻┳|￣　)")
+   time.sleep(0.7)
+   print("┳ﾐ(￣  ／")
+   time.sleep(0.7)
+   print("┻┳T￣")
+   time.sleep(0.7)
+   print('\n')
    os.system("exit")
 ###################################################################
