@@ -58,28 +58,37 @@ time.sleep(0.3)
 
 print("\n")
 
+time.sleep(0.6)
+#######################################################
+version='''                     
+
+                                         \033[1;32mVerion 1.0'''
+########################################################
+
+print(version)
+
 S = "Created By"
 
-time.sleep(0.3)
+time.sleep(0.6)
 
 render(S,'bubble')
 
 S = Style('═╬════════►    Pro For Termux   ',).Square()
 
-time.sleep(0.3)
+time.sleep(0.5)
 
 print(S)
+
 
 print('\n')
 
 
 from getpass import getpass
 time.sleep(0.4)
-user = input("\033[1;35m═>\033[1;36m Enter Your Name: ")
+user = input("\033[1;35m ═>\033[1;36m Enter Your Name: ")
 
 print("\n")
-
-########################################################
+#######################################################
 textD='''
 
        ▄▀▀▀▄
@@ -253,6 +262,8 @@ if choose == '1' :
 
     print('\n')
 
+    os.system('pkg install ssh')
+
     render('OpenSSH','banner3-D')
 
     print('\n')
@@ -301,7 +312,7 @@ if choose == '1' :
 
     print('\n')
 
-    render('Thanck You'+user,'bubble')
+    render('Thanck You','bubble')
     
     print('\n')
     
@@ -322,6 +333,10 @@ if choose == '1' :
 
     time.sleep(0.7)
 
+    print('\n')
+
+    An.Loading(AT=['|','/','-','\\'],text='\rG#exiting',t=0.2)
+   
     print('\n')
 
     os.system("exit")
@@ -345,6 +360,8 @@ elif choose == '0' :
    time.sleep(0.7)
    print("┻┳T￣")
    time.sleep(0.7)
+   print('\n')
+   An.Loading(text='B#exiting',t=0.3)
    print('\n')
    os.system("exit")
 ###################################################################
