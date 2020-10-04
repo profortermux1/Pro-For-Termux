@@ -94,8 +94,7 @@ sleep 15
 
 timeout 10 
 
-python3 FirstTools.py
-
+python3 ProForTermux.py
 exit
 
 elif [ $yesorno = no ];then
