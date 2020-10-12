@@ -382,7 +382,7 @@ elif choose == '2' :
    time.sleep(0.8)
    os.system("git clone https://github.com/MFDGaming/ubuntu-in-termux")
    print('\n')
-   os.system("cd ubuntu-in-temux")
+   os.system("cd ubuntu-in-termux")
    print('\n')
    os.system("./ubuntu.sh")
    print('\n')
