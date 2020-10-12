@@ -380,14 +380,7 @@ elif choose == '2' :
    print("Install Ubuntu Now ........")
    print('\n')
    time.sleep(0.8)
-   os.system("git clone https://github.com/MFDGaming/ubuntu-in-termux")
-   print('\n')
-   os.system("cd ubuntu-in-termux")
-   print('\n')
-   os.system("./ubuntu.sh")
-   print('\n')
-   os.system("./startubuntu.sh")
-   print('\n')
+   os.system('cd /data/data/com.termux/files/home;git clone https://github.com/MFDGaming/ubuntu-in-termux;cd ubuntu-in-termux;chmod +x ubuntu.sh;bash ubuntu.sh;./startubuntu.sh')
    os.system("exit")
 #########################################################
 elif choose == '0' :
