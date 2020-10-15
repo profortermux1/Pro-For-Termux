@@ -1,4 +1,5 @@
 import os,sys,time
+import random
 
 os.system("clear")
 
@@ -16,12 +17,13 @@ def render(text,style):
         	f = Figlet(font=style)
         	print(f.renderText(text))
 
+##############################
 #V7xStyle
 
 from V7xStyle import Animation
 
 An = Animation
-
+#############################
 #TypeWriter
 
 def jalan(z) :
@@ -29,30 +31,36 @@ def jalan(z) :
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.06)
+################################
+c = ['\033[1;30m','\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m','\033[1;37m']
+
+################################$
 
 text='''              
-             \033[1;34m___                ______    
-            \033[1;32m/ __ \________     / ____/__    ____ 
-          \033[1;31m / /_/ / ___/ __ \   / /_  / __ \/ ___/
-        \033[1;30m / ____/ /  / /_/ /  / __/ / /_/ / /
-       \033[1;33m/_/   /_/   \____/  /_/    \____/_/'''  
+            \033[1;31m ___                ______    
+            / __ \________     / ____/__    ____ 
+          / /_/ / ___/ __ \   / /_  / __ \/ ___/
+        / ____/ /  / /_/ /  / __/ / /_/ / /
+      /_/   /_/   \____/  /_/    \____/_/'''  
        
+
 time.sleep(0.3)
 
-An.SlowIndex(text,t=0.01)
+
+An.SlowIndex(text,t=0.002)
 
 time.sleep(0.3)
 
 text2='''
-  \033[1;34m ______     
- \033[1;32m/_  _ _/__  _________ ___  __  ___  __        
-   \033[1;31m / / / _ \/ ___/ __ `__ \/ / / / |/_/
-   \033[1;35m/ / /  __/ /  / / / / / / /_/ />  <
-  \033[1;30m/_/  \___/_/  /_/ /_/ /_/\__,_/_/|_|'''
+   \033[1;34m______     
+ /_  _ _/__  _________ ___  __  ___  __        
+   / / / _ \/ ___/ __ `__ \/ / / / |/_/
+  / / /  __/ /  / / / / / / /_/ />  <
+ /_/  \___/_/  /_/ /_/ /_/\__,_/_/|_|'''
 
 time.sleep(0.3)
 
-An.SlowIndex(text2,t=0.01)
+An.SlowIndex(text2,t=0.002)
 
 time.sleep(0.3)
 
@@ -62,68 +70,61 @@ time.sleep(0.6)
 #######################################################
 version='''                     
 
-                                         \033[1;32mVerion 2.0'''
+                                         \033[1;33mVerion 3.0'''
 ########################################################
 
 print(version)
 
-S = "Created By"
+print('\n')
 
 time.sleep(0.6)
 
-render(S,'bubble')
-
-S = Style('═╬════════►    Pro For Termux   ',).Square()
+S = Style('═╬════►    Pro For Termux   ',).Square()
 
 time.sleep(0.5)
 
 print(S)
 
+print('\n')
+
+jalan("\033[1;36m>>>>>>>>>>>>>>>>>>>>>>>")
 
 print('\n')
 
-
 from getpass import getpass
-time.sleep(0.4)
-user = input("\033[1;35m ═>\033[1;36m Enter Your Name: ")
-
-print("\n")
+time.sleep(0.5)
 #######################################################
 textD='''
 
        ▄▀▀▀▄
   █    █
  ███████         ▄▀▀▄
-░██─▀─██░░█▀█▀▀▀▀█░░█░      \033[1;31mpassowrd \033[1;32mcorrect!
+░██─▀─██░░█▀█▀▀▀▀█░░█░      \033[1;30mpassowrd \033[1;31mcorrect!
 ░███▄███░░▀░▀░░░░░▀▀░░
 '''
 ##########################################################
 textP='''
  +-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+
- |p| |a| |s| |s| |o| |w| |r| |d| = \033[1;31mPro \033[1;33mFor \033[1;32mTermux
+ |p| |a| |s| |s| |o| |w| |r| |d| = \033[1;32mPro For Termux
  +-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+'''
          
 ####################################################
-
-time.sleep(0.3)
+time.sleep(0.4)
 print(textP)
-time.sleep(0.3)
+print('\n')
+jalan("\033[1;36m>>>>>>>>>>>>>>>>>>>>>>>")
+time.sleep(0.5)
 print('\n')
 while True :	
     
     passowd = getpass("\033[1;33m══> \033[1;34m Enter Passowrd: ")
 
     if passowd == "Pro For Termux" :
+       print('\n')
        print(textD)
-       time.sleep(0.3)
        print('\n')
-       render('Subscribe','bubble')
-       time.sleep(0.3)
-       render('Now Please','bubble')
-       time.sleep(0.3)
-       print('\n')
-       time.sleep(0.3)
-       An.Text(AT='Opening link Channel.........' ,text='',CLT='\033[1;33m')
+       time.sleep(0.4)
+       An.Text(AT='Opening link Channel ...' ,text='',CLT='\033[1;33m',repeat=1)
        break
     else :
        print("\n")
@@ -131,31 +132,24 @@ while True :
        print("\n")
 ####################################################################
 We='''
-                          \033[1;36m▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄
-                          █▒▒░░░░░░░░░▒▒█
-                           █░░█░░░░░█░░█
-                        █    ░░░▀█▀░░░█ ▄▄
-                        █░░█▀▄░░░░░░░▄▀─█░░█
-                     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-                   █----╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗----█
-                   █----║║║╠─║─║─║║║║║╠─----█
-                   █----╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝----█
-                     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
 
-                    \033[1;34m╔════╗╔═══╗
-                    \033[1;32m║╔╗╔╗║║╔═╗║
-                    \033[1;31m║║║║ ║║  ║║
-                    \033[1;35m  ║║  ║║ ║║
-                    \033[1;30m  ║║  ║╚═╝║
-                    \033[1;33m  ╚╝  ╚═══╝
 
-      \033[1;34m╔═══╗╔══╗╔═╗╔═╗    ╔════╗╔═══╗╔═══╗╔═╗╔═╗╔╗ ╔╗╔═╗╔═╗
-      \033[1;32m║╔══╝╚╣─╝╚╗╚╝╔╝    ║╔╗╔╗║║╔══╝║╔═╗║║║╚╝║║║║ ║║╚╗╚╝╔╝
-      \033[1;33m║╚══╗ ║║  ╚╗╔╝      ╚ ║║╚╝║╚══╗║╚═╝║║╔╗╔╗║║║ ║║ ╚╗╔╝
-      \033[1;35m║╔══╝ ║║  ╔╝╚╗        ║║  ║╔══╝║╔╗╔╝║║║║║║║║ ║║ ╔╝╚╗
-      \033[1;30m║║   ╔╣─╗╔╝╔╗╚╗       ║║  ║╚══╗║║║╚╗║║║║║║║╚═╝║╔╝╔╗╚╗
-      \033[1;31m╚╝   ╚══╝╚═╝╚═╝       ╚╝  ╚═══╝╚╝╚═╝╚╝╚╝╚╝╚═══╝╚═╝╚═╝
+        \033[1;32mdGGGGMMb
+       \033[1;30m@p~qp~~qMb--------> \033[1;36mCreated by Pro For Termux
+       \033[1;34mM(@)(@) M|
+       \033[1;35m@,----.JM|
+      \033[1;36mJS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMM
+ __|'\ .        |\dS qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMP|   .'
+     `-'       `--
 
 '''
 #####################################################
@@ -170,11 +164,16 @@ print(We)
 def main():
     print("\033[1;31m[1] \033[1;34mTo Start")
     print('\n')
-    time.sleep(0.4)
+    time.sleep(0.8)
     print("\033[1;31m[2] \033[1;34mInstall Ubuntu in termux ")
     print('\n')
-    time.sleep(0.4)
+    time.sleep(0.7)
+    print('\033[1;31m[3] \033[1;34mInstall Metasploit Without Error')
+    time.sleep(0.6)
+    print('\n')
     print("\033[1;31m[0] \033[1;34mTo Exit")
+    print('\n')
+    
 ###################################################################
 print('\n')
 main()
@@ -333,7 +332,7 @@ if choose == '1' :
     print('\n')
 
     print(S)
-
+    
     time.sleep(0.7)
 
     print('\n')
@@ -343,6 +342,7 @@ if choose == '1' :
     print('\n')
 
     os.system("exit")
+
 ####################################################################
 elif choose == '2' :
    print('\n')
@@ -383,6 +383,78 @@ elif choose == '2' :
    os.system('cd /data/data/com.termux/files/home;git clone https://github.com/MFDGaming/ubuntu-in-termux;cd ubuntu-in-termux;chmod +x ubuntu.sh;bash ubuntu.sh;./startubuntu.sh')
    os.system("exit")
 #########################################################
+elif choose == '3' :
+   os.system("clear")
+   render('Metasploit Framework','slant')
+   print('\n')
+   print('\n')
+   time.sleep(0.5)
+   jalan("\033[1;35mSubscribe First in Channel Pro For Termux")
+   time.sleep(0.5)
+   print('\n')
+   os.system('xdg-open https://m.youtube.com/channel/UCkHzOCgII8a8KQRf68sHUxg')
+   time.sleep(0.6)
+   os.system("clear")
+   print('\n')
+   time.sleep(0.6)
+   i1=input("\033[1;32mDo you install Metasploit [yes] or [no] : ")
+   if i1 == "yes" :       
+       time.sleep(0.5)
+       print('\n')
+       An.Loading(AT=['|','/','-','\\'],text='\rB#Wait',t=0.2)
+       print('\n')
+       R=Style('\033[1;33mThis Script is created by pro for termux').Square()
+       print(R) 
+       print('\n')
+       jalan("\033[1;30mistalling metasploit Now .................")
+       print('\n')
+       os.system("apt update")
+       os.system("apt upgrade")
+       os.system("pkg install proot")
+       os.system("pkg install unstable-repo")
+       os.system("pkg install metasploit -y")
+       jalan("\033[1;35Install Successufull Write /033[1;33mmsfconsole \033[1;35To run Metasploit !!")  
+       i5=input("You Would Download Text Order To Learn How To use it \033[1;34[yes] or [no] : ")
+       
+       if i5 == "yes" :
+           print("\n")
+           jalan("\033[1;30mWait To Download milah awamir by profortermux")
+           print('\n')
+           jalan("\033[1;33mOpen Link The milaf awamir wait 6s ... ")
+           time.sleep(0.6)
+           os.system('xdg-open https://gurl.pw/kQ0c')
+           print('\n')
+           th="\033[1;36mThanck You"
+           ce=th.center(90)
+           print(ce)
+           os.system("exit")
+       elif i5 == "no":
+           print('\n')       
+           jalan("ByeBye :(")          	
+           print('\n')
+           os.system("exit")
+       else :
+           print('\n')
+           print('Write Yes Or no')
+           print('\n')
+           os.system("exit")
+          
+   elif i1 == "no" :
+       time.sleep(0.3)
+       print('\n')
+       jalan(" \033[1;34mYou are sure :( ")
+       print('\n')
+       os.system("exit")       
+   else :
+       print('\n')
+       An.Text(AT='Write Yes To run script or No to exit ',text='',CLT='red')
+       time.sleep(0.5)
+       print('\n')
+       jalan('\033[1;31mTry Again ...')
+       time.sleep(0.5)
+       print('\n')
+       os.system("exit")
+########################################################
 elif choose == '0' :
    S = Style('      Created By Pro For Termux     ').Square(Equal=True)
    print('\n')
