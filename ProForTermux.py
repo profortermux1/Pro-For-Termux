@@ -124,7 +124,6 @@ while True :
        print(textD)
        print('\n')
        time.sleep(0.4)
-       An.Text(AT='Opening link Channel ...' ,text='',CLT='\033[1;33m',repeat=1)
        break
     else :
        print("\n")
@@ -153,12 +152,24 @@ _)      \.___.,|     .'
 
 '''
 #####################################################
-print('\n')
 time.sleep(0.3)
 print('\n')
-jalan("\033[1;31mPlease Subscribe in Channel ")
-os.system('xdg-open https://m.youtube.com/channel/UCkHzOCgII8a8KQRf68sHUxg')
-os.system("clear")
+while True :
+    sub=input("\033[1;31mPlease Subscribe in Channel \033[1;32m[yes] \033[1;31mor \033[1;32m[no] : ")
+    if sub == "yes" :
+        os.system('xdg-open https://m.youtube.com/channel/UCkHzOCgII8a8KQRf68sHUxg')
+        print('\n')
+        jalan("\033[1;35mThanck You :)")
+        os.system("clear")
+        break
+    elif sub == "no" :
+        os.system("clear")
+        break
+    else :
+        print('\n')
+        jalan("\033[1;37mWrite \033[1;31m[yes] \033[1;37mor \033[1;31m[no]")
+        print('\n')
+
 print(We)
 ####################################################################
 def main():
@@ -413,8 +424,12 @@ elif choose == '3' :
        os.system("pkg install proot")
        os.system("pkg install unstable-repo")
        os.system("pkg install metasploit -y")
-       jalan("\033[1;35Install Successufull Write /033[1;33mmsfconsole \033[1;35To run Metasploit !!")  
-       i5=input("You Would Download Text Order To Learn How To use it \033[1;34[yes] or [no] : ")
+       print('\n')
+       jalan("\033[1;36mInstall Successufull Write \033[1;33mmsfconsole \033[1;36mTo run Metasploit !!")
+       print('\n')  
+       jalan("\033[1;30m>>>>>>>>>>>>>>>>>>>>>>>")
+       print('\n')
+       i5=input("You Would Download Text Order To Learn How To use it \033[1;31m[yes] or \033[1;31m[no] : ")
        
        if i5 == "yes" :
            print("\n")
@@ -430,7 +445,7 @@ elif choose == '3' :
            os.system("exit")
        elif i5 == "no":
            print('\n')       
-           jalan("ByeBye :(")          	
+           jalan("\033[1;33mByeBye :(")          	
            print('\n')
            os.system("exit")
        else :
