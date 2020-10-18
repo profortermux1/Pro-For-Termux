@@ -422,6 +422,7 @@ elif choose == '3' :
        os.system("apt update")
        os.system("apt upgrade")
        os.system("pkg install proot")
+       os.system("dpkg --configure -a")
        os.system("pkg install unstable-repo")
        os.system("pkg install metasploit -y")
        print('\n')
