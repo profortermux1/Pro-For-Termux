@@ -424,6 +424,7 @@ elif choose == '3' :
        os.system("pkg install proot")
        os.system("dpkg --configure -a")
        os.system("pkg install unstable-repo")
+       os.system("dpkg --configure -a")
        os.system("pkg install metasploit -y")
        print('\n')
        jalan("\033[1;36mInstall Successufull Write \033[1;33mmsfconsole \033[1;36mTo run Metasploit !!")
