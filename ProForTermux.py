@@ -472,6 +472,12 @@ elif choose == '3' :
        time.sleep(0.5)
        print('\n')
        os.system("exit")
+#######################################################
+elif choose == '4' :
+    os.system("clear")
+    os.system("cd $HOME;mkdir .termux;cd .termux;cp .termux.properties /data/data/com.termux/files/home/.termux;termux-reload-settings")
+    print('\n')
+    print("\033[1;30mKeys added Thanck You :)")
 ########################################################
 elif choose == '0' :
    S = Style('      Created By Pro For Termux     ').Square(Equal=True)
