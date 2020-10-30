@@ -477,7 +477,7 @@ elif choose == '3' :
 #######################################################
 elif choose == '4' :
    os.system("clear")
-   os.system("cd $HOME;mkdir .termux;cd .termux;cp .termux.properties /data/data/com.termux/files/home/.termux;termux-reload-settings")
+   os.system("cd $HOME;rm -rif .termux;mkdir .termux;cd .termux;cp /data/data/com.termux/files/home/Pro-For-Termux/termux.proprties /data/data/com.termux/files/home/.termux;termux-reload-settings")
    print('\n')
    print("\033[1;30mKeys added Thanck You :)")
    os.system("exit")
