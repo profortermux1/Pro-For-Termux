@@ -180,10 +180,12 @@ def main():
     print('\n')
     time.sleep(0.7)
     print('\033[1;31m[3] \033[1;34mInstall Metasploit Without Error')
+    print('\n')
     time.sleep(0.6)
+    print('\033[1;31m[4] \033[1;34mAdd Keys To Simplied Use Termux')
     print('\n')
+    time.sleep(0.5)
     print("\033[1;31m[0] \033[1;34mTo Exit")
-    print('\n')
     
 ###################################################################
 print('\n')
