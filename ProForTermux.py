@@ -397,6 +397,7 @@ elif choose == '2' :
    os.system('cd /data/data/com.termux/files/home;git clone https://github.com/MFDGaming/ubuntu-in-termux;cd ubuntu-in-termux;chmod +x ubuntu.sh;bash ubuntu.sh;./startubuntu.sh')
    os.system("exit")
 #########################################################
+##########################$#######?#?####################
 elif choose == '3' :
    os.system("clear")
    render('Metasploit Framework','slant')
@@ -482,22 +483,18 @@ elif choose == '4' :
    print('\n')
    print("\033[1;32mKeys added Thanck You :)")
    print('\n')
-   while True :
-     r = input("\033[1;35mif You Would Remove Keys Write Y or No To Exit")
-     print('\n')
-     if r == 'Y' :
-       print('\n')
-       time.sleep(0.10)
-       os.system('cd $HOME;rm -rif .termux;termux-reload-settings')
-       print('\n')
-       jalan('\033[1;36mThe Keys Was be removed')
-       print('\n')
-       os.system('exit')
-#######################################################
-
-
-
-
+   r = input("\033[1;35mif You Would Remove Keys Write \033[1;32m[Y] \033[1;35mor \033[1;32m[N] \033[1;35mTo Exit : ")
+   if r == 'Y' :
+      print('\n')
+      os.system('cd $HOME;rm -rif .termux;termux-reload-settings')
+      jalan('\033[1;36mThe Keys Was be removed')
+      print('\n')
+      os.system('exit')
+   elif r == 'N' :
+      os.system('exit')
+   else :
+      jalan('\033[1;34mWrite [Y] or [N]')
+      print('\n')
 ########################################################
 elif choose == '0' :
    S = Style('      Created By Pro For Termux     ').Square(Equal=True)
