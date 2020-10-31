@@ -173,6 +173,7 @@ while True :
 print(We)
 ####################################################################
 def main():
+    time.sleep(0.9)
     print("\033[1;31m[1] \033[1;34mTo Start")
     print('\n')
     time.sleep(0.8)
@@ -182,11 +183,11 @@ def main():
     print('\033[1;31m[3] \033[1;34mInstall Metasploit Without Error')
     print('\n')
     time.sleep(0.6)
-    print('\033[1;31m[4] \033[1;34mAdd Keys To Simplied Use Termux')
+    print('\033[1;31m[4] \033[1;34mAdd Keys To Termux')
     print('\n')
     time.sleep(0.5)
     print("\033[1;31m[0] \033[1;34mTo Exit")
-    
+    print('\n')    
 ###################################################################
 print('\n')
 main()
@@ -477,10 +478,26 @@ elif choose == '3' :
 #######################################################
 elif choose == '4' :
    os.system("clear")
-   os.system("cd $HOME;rm -rif .termux;mkdir .termux;cd .termux;cp /data/data/com.termux/files/home/Pro-For-Termux/termux.proprties /data/data/com.termux/files/home/.termux;termux-reload-settings")
+   os.system("cd $HOME;rm -rif .termux;mkdir .termux;cd $HOME;cd Pro-For-Termux/.main;cp termux.properties /data/data/com.termux/files/home/.termux;cd $HOME;cd .termux;termux-reload-settings")
    print('\n')
-   print("\033[1;30mKeys added Thanck You :)")
-   os.system("exit")
+   print("\033[1;32mKeys added Thanck You :)")
+   print('\n')
+   while True :
+     r = input("\033[1;35mif You Would Remove Keys Write Y or No To Exit")
+     print('\n')
+     if r == 'Y' :
+       print('\n')
+       time.sleep(0.10)
+       os.system('cd $HOME;rm -rif .termux;termux-reload-settings')
+       print('\n')
+       jalan('\033[1;36mThe Keys Was be removed')
+       print('\n')
+       os.system('exit')
+#######################################################
+
+
+
+
 ########################################################
 elif choose == '0' :
    S = Style('      Created By Pro For Termux     ').Square(Equal=True)
