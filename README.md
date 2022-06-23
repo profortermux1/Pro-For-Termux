@@ -6,6 +6,20 @@ Methode The usage :
 
 #install
 
+apt update
 
+apt upgrade
+
+pkg install python
+
+pkg install python2
 
 git clone https://github.com/profortermux1/FixTermux
+
+cd FixTermux
+
+chmod +x *
+
+python ProForTermux.py
+
+#GodLuck :)
