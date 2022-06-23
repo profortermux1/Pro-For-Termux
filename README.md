@@ -20,6 +20,10 @@ cd FixTermux
 
 chmod +x *
 
+#OpenTool
+
 python ProForTermux.py
+
+
 
 #GodLuck :)
