@@ -9,21 +9,13 @@ os.system("clear")
 
 # Banner "Slow Index Logo Pro For Termux"
 
-from V7xStyle import Style
-
 from pyfiglet import Figlet #Animation Figlet
 
 def render(text,style):
         	f = Figlet(font=style)
         	print(f.renderText(text))
 
-##############################
-#V7xStyle
-
-from V7xStyle import Animation
-
-An = Animation
-#############################
+################################
 #TypeWriter
 
 def jalan(z) :
@@ -47,8 +39,6 @@ text='''
 time.sleep(0.3)
 
 
-An.SlowIndex(text,t=0.002)
-
 time.sleep(0.3)
 
 text2='''
@@ -58,9 +48,6 @@ text2='''
   / / /  __/ /  / / / / / / /_/ />  <
  /_/  \___/_/  /_/ /_/ /_/\__,_/_/|_|'''
 
-time.sleep(0.3)
-
-An.SlowIndex(text2,t=0.002)
 
 time.sleep(0.3)
 
@@ -77,13 +64,9 @@ print(version)
 
 print('\n')
 
-time.sleep(0.6)
 
-S = Style('═╬════►    Pro For Termux   ',).Square()
 
 time.sleep(0.5)
-
-print(S)
 
 print('\n')
 
@@ -127,7 +110,6 @@ while True :
        break
     else :
        print("\n")
-       An.Text(AT='Passowrd Faild Try Again Please',text='',repeat=1)
        print("\n")
 ####################################################################
 We='''
@@ -157,7 +139,7 @@ print('\n')
 while True :
     sub=input("\033[1;31mPlease Subscribe in Channel \033[1;32m[yes] \033[1;31mor \033[1;32m[no] : ")
     if sub == "yes" :
-        os.system('xdg-open https://m.youtube.com/channel/UCkHzOCgII8a8KQRf68sHUxg')
+        os.system('xdg-open https://youtube.com/c/mhtrftermux')
         print('\n')
         jalan("\033[1;35mThanck You :)")
         os.system("clear")
@@ -180,7 +162,7 @@ def main():
     print("\033[1;31m[2] \033[1;34mInstall Ubuntu in termux ")
     print('\n')
     time.sleep(0.7)
-    print('\033[1;31m[3] \033[1;34mInstall Metasploit Without Error')
+    print('\033[1;31m[3] \033[1;34mInstall Metasploit6 Without Error')
     print('\n')
     time.sleep(0.6)
     print('\033[1;31m[4] \033[1;34mAdd Keys To Termux')
@@ -201,7 +183,6 @@ choose = input("==> \033[1;37mchoose an option : ")
 if choose == '1' :
     print('\n')
     time.sleep(0.3)
-    An.DL(text='B#Proccessing',t=0.1,width=50)
     os.system("clear")
     jalan("   Wait To install some package .....................................")
     print("\n")
@@ -333,26 +314,15 @@ if choose == '1' :
     print('\n')
     
     time.sleep(0.6)
-   
-    time.sleep(0.6)   
     
     print('\033[1;33mThanck you For Usinfg Tool By!!')
 
     time.sleep(0.6)
 
     print('\n')
-    S = Style('   Created By Pro For Termux    ').Square(Equal=True)
-    
-    print('\n')
-
-    print(S)
-    
+     
     time.sleep(0.7)
-
-    print('\n')
-
-    An.Loading(AT=['|','/','-','\\'],text='\rG#exiting',t=0.2)
-   
+  
     print('\n')
 
     os.system("exit")
@@ -363,13 +333,10 @@ elif choose == '2' :
    os.system("clear")
    time.sleep(0.9)
    print('\n')
-   An.DL(text='R#proccessing',width=50)
    print('\n')
    time.sleep(0.7)
    jalan("\033[1;30mThis Script is created by channel ProForTermux")
    time.sleep(0.7)
-   print('\n')
-   An.Text(AT='Wait ......',text='')
    print('\n')
    time.sleep(0.7)
    render('Install Ubuntu','slant')
@@ -402,35 +369,32 @@ elif choose == '3' :
    os.system("clear")
    render('Metasploit Framework','slant')
    print('\n')
-   print('\n')
    time.sleep(0.5)
    jalan("\033[1;35mSubscribe First in Channel Pro For Termux")
    time.sleep(0.5)
    print('\n')
-   os.system('xdg-open https://m.youtube.com/channel/UCkHzOCgII8a8KQRf68sHUxg')
+   os.system('xdg-open https://youtube.com/c/mhtrftermux')
    time.sleep(0.6)
    os.system("clear")
    print('\n')
    time.sleep(0.6)
-   i1=input("\033[1;32mDo you install Metasploit [yes] or [no] : ")
+   i1=input("\033[1;32mDo you wanna install Metasploit [yes] or [no] : ")
    if i1 == "yes" :       
        time.sleep(0.5)
        print('\n')
-       An.Loading(AT=['|','/','-','\\'],text='\rB#Wait',t=0.2)
-       print('\n')
-       R=Style('\033[1;33mThis Script is created by pro for termux').Square()
-       print(R) 
        print('\n')
        jalan("\033[1;30mistalling metasploit Now .................")
        print('\n')
+       os.system("dpkg --configure -a")
        os.system("apt update")
        os.system("apt upgrade")
-       os.system("pkg install unstable-repo")
-       os.system("dpkg --configure -a")
-       os.system("pkg install unstable-repo")
-       os.system("pkg install metasploit -y")
-       os.system("dpkg --configure -a")
-       os.system("pkg install metasploit -y")
+       os.system("cd $HOME")
+       os.system("curl -L -o $PWD/mversion https://raw.githubusercontent.com/efxtv/Metasploit-in-termux/main/Scripts/mversion -s;chmod +x mversion;mv mversion ../usr/bin/;mversion")
+       os.system("cd FixTermux")
+       os.system("chmod +x mversion.sh")
+       os.system("pkg install ncurses-utils")
+       os.system("bash mversion.sh")
+       os.system("msfconsole")
        print('\n')
        jalan("\033[1;36mInstall Successufull Write \033[1;33mmsfconsole \033[1;36mTo run Metasploit !!")
        print('\n')  
@@ -444,7 +408,6 @@ elif choose == '3' :
            print('\n')
            jalan("\033[1;33mOpen Link The milaf awamir wait 6s ... ")
            time.sleep(0.6)
-           os.system('xdg-open https://gurl.pw/kQ0c')
            print('\n')
            th="\033[1;36mThanck You"
            ce=th.center(90)
@@ -468,8 +431,6 @@ elif choose == '3' :
        print('\n')
        os.system("exit")       
    else :
-       print('\n')
-       An.Text(AT='Write Yes To run script or No to exit ',text='',CLT='\033[1;31m',repeat=1)
        time.sleep(0.5)
        print('\n')
        jalan('\033[1;30mTry Again ...')
@@ -497,9 +458,7 @@ elif choose == '4' :
       print('\n')
 ########################################################
 elif choose == '0' :
-   S = Style('      Created By Pro For Termux     ').Square(Equal=True)
    print('\n')
-   print(S)
    print('\n')
    print("\033[1;33m┻┳|―-∩")
    time.sleep(0.7)
@@ -516,7 +475,6 @@ elif choose == '0' :
    print("┻┳T￣")
    time.sleep(0.7)
    print('\n')
-   An.Loading(text='B#exiting',t=0.3)
    print('\n')
    os.system("exit")
 ###################################################################
