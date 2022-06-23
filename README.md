@@ -6,6 +6,8 @@ Methode The usage :
 
 #install
 
+termux-setup-storage
+
 apt update
 
 apt upgrade
