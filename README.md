@@ -20,7 +20,7 @@ How to set up that Tool:
 
 8- cd FixTermux
 
-9- chmod +x *
+9- chmod +x install.sh ProForTermux.py
 
 #Open the Tool:
 
