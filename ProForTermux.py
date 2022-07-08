@@ -7,9 +7,24 @@ os.system('git pull')
 
 os.system("clear")
 
+#Installing
+os.system("apt update -y && apt upgrade -y")
+os.system("pkg install python")
+os.system("pkg install python2")
+os.system("pip install pyfiglet")
+os.system("pip install --upgrade pip")
+os.system("pip3 install pyfiglet ")
+os.system("pip install --upgrade pip")
+
+time.sleep(0.3)
+
+os.system("clear")
+
 # Banner "Slow Index Logo Pro For Termux"
 
-from pyfiglet import Figlet #Animation Figlet
+from pyfiglet import Figlet 
+
+#Animation Figlet
 
 def render(text,style):
         	f = Figlet(font=style)
@@ -136,22 +151,7 @@ _)      \.___.,|     .'
 #####################################################
 time.sleep(0.3)
 print('\n')
-while True :
-    sub=input("\033[1;31mPlease Subscribe in Channel \033[1;32m[yes] \033[1;31mor \033[1;32m[no] : ")
-    if sub == "yes" :
-        os.system('xdg-open https://youtube.com/c/mhtrftermux')
-        print('\n')
-        jalan("\033[1;35mThanck You :)")
-        os.system("clear")
-        break
-    elif sub == "no" :
-        os.system("clear")
-        break
-    else :
-        print('\n')
-        jalan("\033[1;37mWrite \033[1;31m[yes] \033[1;37mor \033[1;31m[no]")
-        print('\n')
-
+os.system("clear")
 print(We)
 ####################################################################
 def main():
