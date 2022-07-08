@@ -4,31 +4,27 @@ This Tools is about install and running termux then Fix Problem and Slove it
 How to set up that Tool: 
 
 
-termux-setup-storage
+1- termux-setup-storage
 
-apt update -y
+2- apt update -y
 
-apt upgrade -y
+3- apt upgrade -y
 
-pkg install git -y
+4- pkg install git -y
 
-pkg install python -y
+5- pkg install python -y
 
-pkg install python2 -y
+6- pkg install python2 -y
 
-git clone https://github.com/profortermux1/FixTermux
+7- git clone https://github.com/profortermux1/FixTermux
 
-cd FixTermux
+8- cd FixTermux
 
-chmod +x *
-
-#Install
-
-./install.sh
+9- chmod +x *
 
 #Open the Tool:
 
-python ProForTermux.py
+10- python ProForTermux.py
 
 
 
