@@ -8,13 +8,8 @@ os.system('git pull')
 os.system("clear")
 
 #Installing
-os.system("apt update -y && apt upgrade -y")
-os.system("pkg install python")
-os.system("pkg install python2")
-os.system("pip install pyfiglet")
-os.system("pip install --upgrade pip")
-os.system("pip3 install pyfiglet ")
-os.system("pip install --upgrade pip")
+os.system("cd FixTermux")
+os.system("./install.sh")
 
 time.sleep(0.3)
 
