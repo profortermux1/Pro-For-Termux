@@ -7,13 +7,7 @@ os.system('git pull')
 
 os.system("clear")
 
-#Installing
-os.system("cd FixTermux")
-os.system("./install.sh")
-
 time.sleep(0.3)
-
-os.system("clear")
 
 # Banner "Slow Index Logo Pro For Termux"
 
