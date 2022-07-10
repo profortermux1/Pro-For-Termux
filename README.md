@@ -22,9 +22,11 @@ How to set up that Tool:
 
 9- chmod +x install.sh ProForTermux.py
 
+10- ./install.sh
+
 #Open the Tool:
 
-10- python ProForTermux.py
+11- python ProForTermux.py
 
 
 
