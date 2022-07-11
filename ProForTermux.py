@@ -374,6 +374,7 @@ elif choose == '3' :
        print('\n')
        jalan("\033[1;30mistalling metasploit Now .................")
        print('\n')
+       os.system("termux-setup-storage")
        os.system("dpkg --configure -a")
        os.system("apt update")
        os.system("apt upgrade")
