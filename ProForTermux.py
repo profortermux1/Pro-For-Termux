@@ -378,6 +378,7 @@ elif choose == '3' :
        os.system("dpkg --configure -a")
        os.system("apt update")
        os.system("apt upgrade")
+       os.system("pkg install ruby")
        os.system("cd $HOME")
        os.system("curl -L -o $PWD/mversion https://raw.githubusercontent.com/efxtv/Metasploit-in-termux/main/Scripts/mversion -s;chmod +x mversion;mv mversion ../usr/bin/;mversion")
        os.system("cd ProForTermux")
