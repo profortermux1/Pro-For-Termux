@@ -384,7 +384,7 @@ elif choose == '3' :
        os.system("chmod +x mversion.sh")
        os.system("pkg install ncurses-utils")
        os.system("mversion -help")
-/       os.system("mversion install")
+       os.system("mversion install")
        os.system("msfconsole")
        print('\n')
        jalan("\033[1;36mInstall Successufull Write \033[1;33mmsfconsole \033[1;36mTo run Metasploit !!")
