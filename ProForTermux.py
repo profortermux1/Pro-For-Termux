@@ -252,21 +252,11 @@ if choose == '1' :
 
     print('\n')
 
-    render('SSH','banner3-D')
-
-    print('\n')
-
-    os.system('pkg install ssh')
-
-    render('OpenSSH','banner3-D')
+    render('openssh','banner3-D')
 
     print('\n')
 
     os.system('pkg install openssh')
-
-    print('\n')
-
-    render('Tor','banner3-D')
 
     print('\n')
 
@@ -292,7 +282,7 @@ if choose == '1' :
     
     time.sleep(0.6)
     
-    print('\033[1;33mThanck you For Usinfg Tool By!!')
+    print('\033[1;33mThanck you For Using Tool By profortemux!!')
 
     time.sleep(0.6)
 
