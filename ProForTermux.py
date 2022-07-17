@@ -135,7 +135,7 @@ We='''
 _)      \.___.,|     .'
 \____   )MMMMMP|   .'               \033[1;33mInstgram: chouaib_proft
      `-'       `--
-
+                                    \033[1;36mTelegram : https://t.me/profortermux
 '''
 #####################################################
 time.sleep(0.3)
@@ -180,49 +180,49 @@ if choose == '1' :
 
     print('\n')
     
-    render('Update','banner3-D')
+    render('update','banner3-D')
     
     os.system('dpkg --configure -a')
     
-    os.system('apt update')
+    os.system('apt update -y')
 
     print('\n')
 
-    render('Ugrade','banner3-D')
+    render('ugrade','banner3-D')
 
     print('\n')
 
-    os.system('apt upgrade')
+    os.system('apt upgrade -y')
 
     os.system('dpkg --configure -a')
 
     print('\n')
 
-    render('Git','banner3-D')
+    render('git','banner3-D')
 
     print('\n')
 
     os.system('dpkg --configure -a')
 
-    os.system('pkg install git')
+    os.system('pkg install git -y')
 
     print('\n')
 
-    render('Python','banner3-D')
+    render('python','banner3-D')
 
     print('\n')
 
     os.system('dpkg --configure -a')
 
-    os.system('pkg install python')
+    os.system('pkg install python -y')
 
     print('\n')
 
-    render('Python2','banner3-D')
+    render('python2','banner3-D')
 
     print('\n')
 
-    os.system('pkg install python2')
+    os.system('pkg install python2 -y')
 
     print('\n')
 
@@ -230,17 +230,17 @@ if choose == '1' :
 
     print('\n')
 
-    os.system('pkg install php')
+    os.system('pkg install php -y')
 
     print('\n')
 
-    render('Wget','banner3-D')
+    render('wget','banner3-D')
 
     print('\n')
 
     os.system('dpkg --configure -a')
 
-    os.system('pkg install wget')
+    os.system('pkg install wget -y')
 
     print('\n')
 
@@ -248,7 +248,7 @@ if choose == '1' :
 
     print('\n')
 
-    os.system('pkg install curl')
+    os.system('pkg install curl -y')
 
     print('\n')
 
@@ -256,7 +256,7 @@ if choose == '1' :
 
     print('\n')
 
-    os.system('pkg install openssh')
+    os.system('pkg install openssh -y')
 
     print('\n')
 
@@ -266,7 +266,7 @@ if choose == '1' :
 
     os.system('dpkg --configure -a')
 
-    os.system('pkg install ruby')
+    os.system('pkg install ruby -y')
 
     print('\n')
 
@@ -276,7 +276,7 @@ if choose == '1' :
 
     os.system('dpkg --configure -a')
 
-    os.system('pkg install colorama')
+    os.system('pkg install colorama -y')
 
     print('\n')
     
@@ -331,7 +331,7 @@ elif choose == '2' :
    os.system('cd /data/data/com.termux/files/home;git clone https://github.com/MFDGaming/ubuntu-in-termux;cd ubuntu-in-termux;chmod +x ubuntu.sh;bash ubuntu.sh;./startubuntu.sh')
    os.system("exit")
 #########################################################
-##########################$#######?#?####################
+#########################################################
 elif choose == '3' :
    os.system("clear")
    render('Metasploit Framework','slant')
