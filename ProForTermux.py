@@ -194,11 +194,15 @@ if choose == '1' :
 
     os.system('apt upgrade')
 
+    os.system('dpkg --configure -a')
+
     print('\n')
 
     render('Git','banner3-D')
 
     print('\n')
+
+    os.system('dpkg --configure -a')
 
     os.system('pkg install git')
 
@@ -207,6 +211,8 @@ if choose == '1' :
     render('Python','banner3-D')
 
     print('\n')
+
+    os.system('dpkg --configure -a')
 
     os.system('pkg install python')
 
@@ -232,11 +238,13 @@ if choose == '1' :
 
     print('\n')
 
+    os.system('dpkg --configure -a')
+
     os.system('pkg install wget')
 
     print('\n')
 
-    render('Curl','banner3-D')
+    render('curl','banner3-D')
 
     print('\n')
 
@@ -262,21 +270,11 @@ if choose == '1' :
 
     print('\n')
 
-    os.system('pkg install tor')
-
-    print('\n')
-
-    render('future','banner3-D')
-
-    print('\n')
-
-    os.system('pkg install future')
-
-    print('\n')
-
     render('ruby','banner3-D')
 
     print('\n')
+
+    os.system('dpkg --configure -a')
 
     os.system('pkg install ruby')
 
@@ -286,20 +284,10 @@ if choose == '1' :
 
     print('\n')
 
+    os.system('dpkg --configure -a')
+
     os.system('pkg install colorama')
 
-    print('\n')
-
-    render('Zip','banner3-D')
-
-    print('\n')
-
-    os.system('pkg install zip && pkg unzip')
-
-    print('\n')
-
-    render('Thanck You','bubble')
-    
     print('\n')
     
     time.sleep(0.6)
@@ -391,43 +379,6 @@ elif choose == '3' :
        print('\n')  
        jalan("\033[1;30m>>>>>>>>>>>>>>>>>>>>>>>")
        print('\n')
-       i5=input("You Would Download Text Order To Learn How To use it \033[1;31m[yes] or \033[1;31m[no] : ")
-       
-       if i5 == "yes" :
-           print("\n")
-           jalan("\033[1;30mWait To Download milah awamir by profortermux")
-           print('\n')
-           jalan("\033[1;33mOpen Link The milaf awamir wait 6s ... ")
-           time.sleep(0.6)
-           print('\n')
-           th="\033[1;36mThanck You"
-           ce=th.center(90)
-           print(ce)
-           os.system("exit")
-       elif i5 == "no":
-           print('\n')       
-           jalan("\033[1;33mByeBye :(")          	
-           print('\n')
-           os.system("exit")
-       else :
-           print('\n')
-           print('Write Yes Or no')
-           print('\n')
-           os.system("exit")
-          
-   elif i1 == "no" :
-       time.sleep(0.3)
-       print('\n')
-       jalan(" \033[1;34mYou are sure :( ")
-       print('\n')
-       os.system("exit")       
-   else :
-       time.sleep(0.5)
-       print('\n')
-       jalan('\033[1;30mTry Again ...')
-       time.sleep(0.5)
-       print('\n')
-       os.system("exit")
 #######################################################
 elif choose == '4' :
    os.system("clear")
